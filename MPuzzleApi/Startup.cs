@@ -44,8 +44,8 @@ namespace MPuzzleApi
                 endpoints.MapControllers();
             });
 
-            //var DB = app.ApplicationServices.GetRequiredService<MPuzzleContext>();
-            //DB.Database.EnsureCreated();
+            var DB = app.ApplicationServices.GetRequiredService<StoryContext>();
+            DB.Database.EnsureCreated();
         }
     }
 }

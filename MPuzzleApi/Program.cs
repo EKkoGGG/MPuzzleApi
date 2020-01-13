@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MPuzzleApi.Models;
 
 namespace MPuzzleApi
 {
@@ -20,7 +21,8 @@ namespace MPuzzleApi
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                    .UseDefaultServiceProvider(options =>options.ValidateScopes = false);
                 });
     }
 }

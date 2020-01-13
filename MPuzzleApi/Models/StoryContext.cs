@@ -9,6 +9,6 @@ namespace MPuzzleApi.Models
         {
         }
 
-        public DbSet<Story> TodoItems { get; set; }
+        public DbSet<Story> Story { get; set; }
     }
 }
