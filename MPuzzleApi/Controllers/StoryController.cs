@@ -22,14 +22,6 @@ namespace MPuzzleApi.Controllers
         }
 
 
-        // GET: api/Story/Title
-        //[HttpGet("Title")]
-        //public async Task<IActionResult> GetStoryTitle()
-        //{
-        //    //return await _context.Story.Select(t => new { Id = t.Id, t.Title }).ToListAsync();
-        //    return await 
-        //}
-
         [HttpGet("Title")]
         public async Task<IActionResult> GetStoryTitleAsync()
         {
